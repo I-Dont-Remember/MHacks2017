@@ -2,7 +2,7 @@ import text
 import difflib
 import config
 
-user = 'Kevin'
+user = 'Jimmy'
 
 
 wordstoremove = ['help']
