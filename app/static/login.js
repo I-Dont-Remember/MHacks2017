@@ -20,15 +20,15 @@ $(document).ready(function() {
           data: JSON.stringify(json_data),
           contentType: 'application/json'
         })
-          .done(function() {
+          .done(function(response) {
             console.log('Successfully logged in');
             $('form').fadeOut(500);
             $('.wrapper').addClass('form-success');
 
             //wait for animation then go to account page
-            setTimeout(function(){
+            setTimeout(function(response){
                 $(".container").fadeOut(1000);
-                location.href = "user/" + json_data.username;
+                location.href = '/user/' + json_data.username;
             }, 1000);
           })
           .fail(function() {
