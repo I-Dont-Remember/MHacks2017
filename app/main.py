@@ -28,11 +28,11 @@ def user(username):
         return '<h1>You are not authorized to access that page</h1>'
 
     user = {
-        'username': 'admin',
-        'name': 'Kevin',
-        'phone': '+1334iiiii',
-        'friend1': '+13545465646',
-        'friend2': '+171504354'
+        'username': 'Jimmy',
+        'name': 'Jimmy',
+        'phone': '+17153387410',
+        'friend1': '+16124811391',
+        'friend2': '+19522502550'
     }
     print('rendering template for account')
     return render_template('account.html',
@@ -48,7 +48,7 @@ def login():
     username = json['username']
     password = json['password']
 
-    if username != 'admin' or password != 'password':
+    if username != 'jimmy' or password != 'password':
         return 'Denied', 401
 
     return redirect(request.args.get('next') or url_for('user', username=username))
