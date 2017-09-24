@@ -133,7 +133,7 @@ form button:hover {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.15);
   bottom: -250px;
-  -webkit-animation: square 25s infinite;
+  -webkit-animation: square 35s infinite;
   animation: square 25s infinite;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -147,8 +147,8 @@ form button:hover {
   height: 80px;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
 }
 .bg-bubbles li:nth-child(3) {
   left: 25%;
@@ -187,8 +187,8 @@ form button:hover {
   height: 20px;
   -webkit-animation-delay: 19s;
           animation-delay: 19s;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
 }
 .bg-bubbles li:nth-child(9) {
   left: 25%;
@@ -196,8 +196,8 @@ form button:hover {
   height: 10px;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .bg-bubbles li:nth-child(10) {
@@ -223,8 +223,8 @@ form button:hover {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-1000px) rotate(600deg);
-            transform: translateY(-1000px) rotate(600deg);
+    -webkit-transform: translateY(-2000px) rotate(600deg);
+            transform: translateY(-2000px) rotate(600deg);
   }
 }
 
