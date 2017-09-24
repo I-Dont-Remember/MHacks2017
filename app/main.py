@@ -34,6 +34,7 @@ def user(username):
         'friend1': '+13545465646',
         'friend2': '+171504354'
     }
+    print('rendering template for account')
     return render_template('account.html',
                             current_user=user)
 

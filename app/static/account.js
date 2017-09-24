@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  console.log('running')
     $('.container').css('visibility','visible').hide().fadeIn(1000);
 
     $("#save-button").click(function(event){
