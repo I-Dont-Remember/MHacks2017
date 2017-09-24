@@ -13,16 +13,17 @@ $(document).ready(function() {
           'password': $password.val()
         };
 
-        $.ajax({
-          type: 'POST',
-          url: login_url,
-          // JSON.stringify is a hack, why doesnt it work without it
-          data: JSON.stringify(json_data),
-          contentType: 'application/json'
-        })
-          .done(function(response) {
+        // $.ajax({
+        //   type: 'POST',
+        //   url: login_url,
+        //   // JSON.stringify is a hack, why doesnt it work without it
+        //   data: JSON.stringify(json_data),
+        //   contentType: 'application/json'
+        // })
+        //   .done(function(response) {
             console.log('Successfully logged in');
             $('form').fadeOut(500);
+            $('#info').fadeOut(500);
             $('.wrapper').addClass('form-success');
 
             //wait for animation then go to account page
@@ -30,11 +31,11 @@ $(document).ready(function() {
                 $(".container").fadeOut(1000);
                 location.href = '/user/' + json_data.username;
             }, 1000);
-          })
-          .fail(function() {
-              $("#error").css('visibility', 'visible')
-              $("#error").attr("value","Invalid username/password");
-          });
+          // })
+          // .fail(function() {
+          //     $("#error").css('visibility', 'visible')
+          //     $("#error").attr("value","Invalid username/password");
+          // });
           event.preventDefault();
         });
 
