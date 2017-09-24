@@ -80,7 +80,7 @@ $(document).ready(function() {
             //login success, wait for animation then go to account page
             setTimeout(function(){
                 $(".container").fadeOut(1000);
-                location.href = "account.html";
+                location.href = "signup";
             }, 1000);
         } else {
             //sign up failed
