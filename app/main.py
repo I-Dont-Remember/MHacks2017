@@ -38,6 +38,10 @@ def user(username):
     return render_template('account.html',
                             current_user=user)
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
 @app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
