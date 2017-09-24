@@ -235,3 +235,11 @@ form button:hover {
 #sign-up-button {
     margin-top: 10px;
 }
+
+#API-acknowledgements {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 200;
+}
